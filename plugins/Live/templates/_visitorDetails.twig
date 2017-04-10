@@ -102,8 +102,6 @@ GPS (lat/long): {{ visitInfo.getColumn('latitude') }},{{ visitInfo.getColumn('lo
 {% endif %}
 {% if isWidget %}
     <br/>
-    {% include "@Live/_visitorLogIcons.twig" with {
-        visitor: visitInfo
-    } %}
+    {{ postEvent('Live.renderVisitorDetails', visitorInfo) }}
 {% endif %}
 {{ referrerContent }}
