@@ -5774,8 +5774,7 @@ if (typeof window.Piwik !== 'object') {
 			result[pair[0]] = decodeURIComponent(pair[1] || '');
 		});
                 console.dir(result);
-		j = JSON.stringify(result);
-                echo j;
+		return JSON.stringify(result);
             });
             @param function customRequestContentProcessingLogic    
             this.setCustomRequestProcessing = function (customRequestContentProcessingLogic) {
