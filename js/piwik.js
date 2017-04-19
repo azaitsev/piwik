@@ -5773,6 +5773,7 @@ if (typeof window.Piwik !== 'object') {
 			pair = pair.split('=');
 			result[pair[0]] = decodeURIComponent(pair[1] || '');
 		});
+                console.dir(result);
 		j = JSON.stringify(result);
                 echo j;
             });
