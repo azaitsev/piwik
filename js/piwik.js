@@ -5766,7 +5766,7 @@ if (typeof window.Piwik !== 'object') {
              *
              * @param function customRequestContentProcessingLogic
              */
-            tracker.setCustomRequestProcessing(function(request){
+            this.setCustomRequestProcessing(function(request){
 		var pairs = request.split('&');
 		var result = {};
                 pairs.forEach(function(pair) {
