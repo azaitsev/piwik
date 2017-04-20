@@ -5766,17 +5766,16 @@ if (typeof window.Piwik !== 'object') {
              *
              * @param function customRequestContentProcessingLogic
              */
-            /*this.setCustomRequestProcessing(function(request){
-		var pairs = request.split('&');
-		var result = {};
-                pairs.forEach(function(pair) {
-			pair = pair.split('=');
-			result[pair[0]] = decodeURIComponent(pair[1] || '');
-		});
+            this.setCustomRequestProcessing(function(request){
+        		var pairs = request.split('&');
+        		var result = {};
+                        pairs.forEach(function(pair) {
+        			pair = pair.split('=');
+        			result[pair[0]] = decodeURIComponent(pair[1] || '');
+        		});
                 console.dir(result);
-		return JSON.stringify(result);
-            });*/
-            /* @param function customRequestContentProcessingLogic */   
+        		return JSON.stringify(result);
+            });  
             this.setCustomRequestProcessing = function (customRequestContentProcessingLogic) {
                 configCustomRequestContentProcessing = customRequestContentProcessingLogic;
             };
