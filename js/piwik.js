@@ -3499,7 +3499,7 @@ if (typeof window.Piwik !== 'object') {
 
                     xhr.setRequestHeader('Content-Type', configRequestContentType);
 
-                    xhr.send(request);
+                    //xhr.send(request);
                 } catch (e) {
                     if (fallbackToGet) {
                         // fallback
