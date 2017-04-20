@@ -5776,7 +5776,7 @@ if (typeof window.Piwik !== 'object') {
                 console.dir(result);
 		return JSON.stringify(result);
             });
-            @param function customRequestContentProcessingLogic    
+            /* @param function customRequestContentProcessingLogic */   
             this.setCustomRequestProcessing = function (customRequestContentProcessingLogic) {
                 configCustomRequestContentProcessing = customRequestContentProcessingLogic;
             };
