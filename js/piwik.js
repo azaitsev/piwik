@@ -3632,6 +3632,7 @@ if (typeof window.Piwik !== 'object') {
                 callback();
             }
 
+
             /*
              * Send request
              */
