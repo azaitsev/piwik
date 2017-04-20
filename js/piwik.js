@@ -5766,7 +5766,7 @@ if (typeof window.Piwik !== 'object') {
              *
              * @param function customRequestContentProcessingLogic
              */
-            this.setCustomRequestProcessing(function(request){
+            /*this.setCustomRequestProcessing(function(request){
 		var pairs = request.split('&');
 		var result = {};
                 pairs.forEach(function(pair) {
@@ -5775,7 +5775,7 @@ if (typeof window.Piwik !== 'object') {
 		});
                 console.dir(result);
 		return JSON.stringify(result);
-            });
+            });*/
             /* @param function customRequestContentProcessingLogic */   
             this.setCustomRequestProcessing = function (customRequestContentProcessingLogic) {
                 configCustomRequestContentProcessing = customRequestContentProcessingLogic;
