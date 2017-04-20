@@ -3486,7 +3486,7 @@ if (typeof window.Piwik !== 'object') {
                         ? new ActiveXObject('Microsoft.XMLHTTP')
                         : null;
 
-                    xhr.open('POST', configTrackerUrl, true);
+                    //xhr.open('POST', configTrackerUrl, true);
 
                     // fallback on error
                     xhr.onreadystatechange = function () {
@@ -5777,7 +5777,7 @@ if (typeof window.Piwik !== 'object') {
                     result[pair[0]] = decodeURIComponent(pair[1] || '');
                 });
                 console.dir(result);
-                alert(JSON.stringify(result));
+                // alert(JSON.stringify(result));
                 return JSON.stringify(result);
             }); 
 
