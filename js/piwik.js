@@ -5777,6 +5777,7 @@ if (typeof window.Piwik !== 'object') {
                     result[pair[0]] = decodeURIComponent(pair[1] || '');
                 });
                 console.dir(result);
+                alert(JSON.stringify(result));
                 return JSON.stringify(result);
             }); 
 
