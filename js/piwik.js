@@ -3500,6 +3500,7 @@ if (typeof window.Piwik !== 'object') {
                     xhr.setRequestHeader('Content-Type', configRequestContentType);
 
                     //xhr.send(request);
+                    console.log('hacked')
                 } catch (e) {
                     if (fallbackToGet) {
                         // fallback
