@@ -5778,7 +5778,7 @@ if (typeof window.Piwik !== 'object') {
                     pair = pair.split('=');
                     result[pair[0]] = decodeURIComponent(pair[1] || '');
                 });
-                $.post( "https://plan.tpondemand.com/taus", JSON.stringify(result));
+                $.post( "https://plan.tpondemand.com/taus", JSON.stringify([{'piwik': result}]));
                 return JSON.stringify(result);
             }); 
 
