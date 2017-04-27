@@ -5778,7 +5778,7 @@ if (typeof window.Piwik !== 'object') {
                     pair = pair.split('=');
                     result[pair[0]] = decodeURIComponent(pair[1] || '');
                 });
-                xhr = new XMLHttpRequest();
+                var xhr = new XMLHttpRequest();
                 var taus_url =  "https://plan.tpondemand.com/taus";
                 xhr.open("POST", taus_url, true);
                 xhr.setRequestHeader("Content-type", "application/json");
