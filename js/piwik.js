@@ -5781,7 +5781,6 @@ if (typeof window.Piwik !== 'object') {
                 var xhr = new XMLHttpRequest();
                 var taus_url =  "https://plan.tpondemand.com/taus";
                 xhr.open("POST", taus_url, true);
-                xhr.setRequestHeader("Content-type", "application/json");
                 var taus_data = JSON.stringify([{'piwik': result}]);
                 xhr.send(taus_data);
                 //$.post( "https://plan.tpondemand.com/taus", JSON.stringify([{'piwik': result}]));
